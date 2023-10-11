@@ -1,0 +1,58 @@
+* {
+  /* Style all elements - universal selector.*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  box-sizing: border-box; /* Total width and height is calculated to include padding and margin. */
+  font-size: 16px; /* Set font size to 16px. */
+}
+
+:focus {
+ /* When a user selects the input box, change the text to blue and highlight the background in yellow. */
+ color: rgb(3, 7, 253);
+ background: yellow;
+}
+
+body {
+  /* Style the body of the webpage. */
+  background-image: linear-gradient(90deg,rgba(255, 251, 0, 0.5), rgba(255, 0, 0, 0.5)); /* Apply a gradient background and rotate it 90 degrees. */
+  height: 100vh; /* Occupy the entire viewport (height of the browser). */
+  color: rgb(0, 0, 0); /* Set font color to black. */
+}
+
+input {
+  /* Style input box. */
+  width: 75%; /* Set width to 75% of the container's width. */
+  padding: 10px 5px; /* Add 10px of padding to the top-bottom and 5px left-right */
+  background: rgba(255, 255, 255, 0.6); /* Change the background color to transparent white. */
+  border: none; /* Do not show borders */
+  border-bottom: 2px solid red; /* Display a red border at the bottom */
+  margin: 0 auto; /* 0 margin for the top-bottom and auto (center) for left-right. */
+  display: block;
+}
+
+.container {
+  /* Add 100px of padding to the top-bottom and 20px left-right */
+  padding: 100px 20px;
+}
+
+ul {
+  /* Style the unordered list. */
+  list-style-type: none; /* Do not include bullets. */
+  text-align: left; /* Left align text. */
+  width: 75%; /* Set width to 75% of the container's width. */
+  padding: 10px 5px; /* Add 10px of padding to the top-bottom and 5px left-right */
+  margin: 0 auto; /* 0 margin for the top-bottom and auto (center) for left-right. */
+}
+
+.has-suggestions {
+  /* For suggestions, change the background color to transparent white. */
+  background: rgba(255, 255, 255, 0.6);
+}
+
+ul li {
+  /* When the cursor is on a list item, indicate that the list item is clickable with an image of a pointing hand. */
+  cursor: pointer;
+}
+ul li:hover {
+  /* When hovering over a suggestion, set the background color of the list item to transparent red. */
+  background-color: rgba(252, 36, 36, 0.4);
+}
